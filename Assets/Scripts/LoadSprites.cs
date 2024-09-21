@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class LoadSprites : MonoBehaviour {
     [SerializeField] private List<SpriteRenderer> _spriteRenderers;
-    [SerializeField] private AssetReference _assetReference;
+    [SerializeField] private AssetLabelReference _assetLabelReference;
     private SpriteAtlas _spriteAtlas;
     private void Start()
     {
@@ -22,7 +22,7 @@ public class LoadSprites : MonoBehaviour {
 
     public void Load() 
     {
-        Addressables.LoadAssetAsync<SpriteAtlas>(_assetReference).Completed += LoadSpiteAtlas;
+        Addressables.LoadAssetAsync<SpriteAtlas>(_assetLabelReference).Completed += LoadSpiteAtlas;
     }
     private void LoadSpiteAtlas(AsyncOperationHandle<SpriteAtlas> handle)
     {

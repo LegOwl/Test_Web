@@ -16,9 +16,9 @@ SpriteAtlasImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 16384
+    maxTextureSize: 512
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: 47
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
