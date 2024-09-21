@@ -1,22 +1,54 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.U2D;
+using UnityEngine.ResourceManagement.AsyncOperations;
+using System.Collections.Generic;
 
 public class LoadSprites : MonoBehaviour {
-    public GameObject[] spriteRenderer;
-    public string[] strings;
-
-
-    public void load() {
-        for (int i = 0; i < spriteRenderer.Length; i++) {
-            StartCoroutine(LoadSprite(spriteRenderer[i].GetComponent<SpriteRenderer>(), i));
+    [SerializeField] private List<SpriteRenderer> _spriteRenderers;
+    [SerializeField] private AssetReference _assetReference;
+    private SpriteAtlas _spriteAtlas;
+    private void Start()
+    {
+        foreach (Transform child in transform)
+        {
+            SpriteRenderer sr = child.GetComponent<SpriteRenderer>();
+            if (sr != null)
+            {
+                _spriteRenderers.Add(sr);
+            }
         }
     }
 
-    IEnumerator LoadSprite(SpriteRenderer spriteRenderer, int number) {
-        var task = Addressables.LoadAssetAsync<Sprite>(strings[number]);
-        yield return task;
-        spriteRenderer.sprite = task.Result;
+    public void Load() 
+    {
+        Addressables.LoadAssetAsync<SpriteAtlas>(_assetReference).Completed += LoadSpiteAtlas;
     }
+    private void LoadSpiteAtlas(AsyncOperationHandle<SpriteAtlas> handle)
+    {
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            _spriteAtlas = handle.Result;
 
+            for (int i = 0; i < _spriteRenderers.Count; i++)
+            {
+                if (i < _spriteAtlas.spriteCount)
+                {
+                    Sprite sprite = _spriteAtlas.GetSprite($"Image {i+1}");
+                    if (sprite != null)
+                    {
+                        _spriteRenderers[i].sprite = sprite;
+                    }
+                    else
+                    {
+                        Debug.LogError($"Sprite {i+1} not found");
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Failed to load Sprite Atlas");
+        }
+    }
 }

@@ -397,28 +397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf067bb32e735ae4484c28e753a29cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer:
-  - {fileID: 1203451396}
-  - {fileID: 31387251}
-  - {fileID: 685303888}
-  - {fileID: 1968271868}
-  - {fileID: 876495799}
-  - {fileID: 1967889540}
-  - {fileID: 168487877}
-  - {fileID: 612153926}
-  - {fileID: 1029672303}
-  - {fileID: 469538904}
-  strings:
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 1.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 2.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 3.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 4.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 5.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 6.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 7.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 8.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 9.jpg"
-  - "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image 10.jpg"
+  _spriteRenderers: []
+  _assetReference:
+    m_AssetGUID: 1b87de21c89d0ab4290e5c004bd21f1c
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
 --- !u!1 &266573016
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d18cf340723e114db5bacd5d4e33231, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 266573020}
+  _loadSprites: {fileID: 183797124}
 --- !u!1 &319602647
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,7 +740,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   m_Layer: 0
-  m_Name: "\u041A\u0430\u043C\u0435\u0440\u0430"
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1254,6 +1240,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1370596956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1370596959}
+  - component: {fileID: 1370596958}
+  - component: {fileID: 1370596957}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1370596957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370596956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1370596958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370596956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1370596959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370596956}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1450087573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,7 +1321,7 @@ GameObject:
   - component: {fileID: 1450087575}
   - component: {fileID: 1450087574}
   m_Layer: 5
-  m_Name: "\u043A\u0430\u043D\u0432\u0430\u0441"
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,3 +1720,4 @@ SceneRoots:
   - {fileID: 1450087577}
   - {fileID: 183797123}
   - {fileID: 319602649}
+  - {fileID: 1370596959}

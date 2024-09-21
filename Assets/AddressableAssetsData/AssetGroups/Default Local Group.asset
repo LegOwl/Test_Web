@@ -17,68 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 52e2eecb57d38ca44a2387ded6ff6ca1
   m_SerializeEntries:
-  - m_GUID: 03014ad38f29a464cb30bae53cd45421
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      6.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1b87de21c89d0ab4290e5c004bd21f1c
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/\u0430\u0442\u043B\u0430\u0441.spriteatlasv2"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1fc5b3ca051cfea4aa39e156f7ec9ba5
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      10.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4919f319bc09a0a4780558f7e233c626
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      4.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6a9d39f6cc2758b4da22631e2350189f
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      7.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6b2f6b69b32b18f4caf8f48d7a4af7be
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      5.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7c008ba782ca05640ace614d27f96a51
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      9.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: baee2bb1bf057ca438dc62a2772432c1
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      2.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e8db5cf81db8beb41b18e707bbb2ac57
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      1.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f2712058d37c60d428855b7ff05bb69b
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      8.jpg"
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: fa7f6b0ae96f98449a354405661c5dcd
-    m_Address: "Assets/\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430/Image
-      3.jpg"
+    m_Address: Assets/Atlases/Atlas.spriteatlasv2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
